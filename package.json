@@ -1,0 +1,12 @@
+{
+  "name": "projetobdn",
+  "version": "1.0.0",
+  "description": "Bloco de notas CRUD em node.js",
+  "main": "app.js",
+  "scripts": {},
+  "author": "JarbasTS",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
