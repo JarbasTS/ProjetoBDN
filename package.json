@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "description": "Bloco de notas CRUD em node.js",
   "main": "app.js",
-  "scripts": {},
+  "scripts": {
+    "db:migrations": "npx prisma migrate dev --preview-feature",
+    "db:reset": "npx prisma migrate reset --preview-feature",
+    "db:migrate": "npx prisma generate",
+    "db:studio": "npx prisma studio",
+    "db:legacy": "npx prisma introspect",
+    "dev": "nodemon server.js"
+  },
   "author": "JarbasTS",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "@prisma/client": "^4.3.0",
+    "express": "^4.18.1",
+    "prisma": "^4.3.0",
+    "sqlite": "^4.1.2"
   }
 }
